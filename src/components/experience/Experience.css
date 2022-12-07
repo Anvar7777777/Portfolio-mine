@@ -1,0 +1,52 @@
+
+.frontend-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--color-bg-variant);
+    padding: 2.4rem 0rem 2.4rem 12rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.frontend-part:hover{
+    background: transparent;
+    border-radius: var(--color-primary-variant);
+    cursor: default;
+}
+
+.experience__content > h3{
+    margin-top: -2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.experience__details{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 18px;
+}
+
+.experience-check-icon{
+    color: var(--color-primary);
+    margin-top: 6px;
+}
+
+/* =========Media quaries (medium devices) ===========*/
+@media screen and (max-width: 1024px) {
+    .frontend-part{
+        width: 90%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+
+/* =========Media quaries (small devices) ===========*/
+@media screen and (max-width: 600px) {
+   .experience__content{
+    width: 100%;
+    padding: 2rem 0px;
+   }
+
+}
